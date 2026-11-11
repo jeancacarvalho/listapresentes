@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Karla:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="hero-date" id="hero-date"></p>
+        <h1 class="hero-names" id="hero-names"></h1>
+        <div class="hero-photo">
+          <img
+            id="hero-photo-casal"
+            src=""
+            alt=""
+            width="861px"
+            height="1024"
+            loading="lazy"
+          />
+        </div>
+        <div class="divider"></div>
+        <p class="hero-tagline" id="hero-tagline"></p>
+      </header>
+
+      <section class="filters">
+        <input
+          id="f-busca"
+          class="field"
+          type="text"
+          placeholder="Buscar por nome ou categoria"
+        />
+        <select id="f-categoria" class="field">
+          <option value="">Todas as categorias</option>
+        </select>
+        <select id="f-faixa" class="field">
+          <option value="all">Todas as faixas de preço</option>
+          <option value="1-50">R$1 a R$50</option>
+          <option value="51-100">R$51 a R$100</option>
+          <option value="101-250">R$101 a R$250</option>
+          <option value="251-500">R$251 a R$500</option>
+          <option value="501-1000">R$501 a R$1000</option>
+          <option value="1000+">Acima de R$1000</option>
+        </select>
+        <select id="f-ordem" class="field">
+          <option value="relevancia">Ordenar</option>
+          <option value="menor">Menor preço</option>
+          <option value="maior">Maior preço</option>
+        </select>
+      </section>
+
+      <p id="contador" class="contador"></p>
+
+      <div id="grade" class="grid"></div>
+      <p id="vazio" class="vazio" hidden>Nenhum presente encontrado.</p>
+    </main>
+
+    <script src="js/list.js"></script>
+  </body>
+</html>
